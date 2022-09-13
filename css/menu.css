@@ -64,6 +64,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
@@ -88,12 +89,41 @@ p, a {
 
 /* header section */
 header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 6%;
+    padding-bottom: 2%;
+    font-size: 2.0rem;
+}
+header nav {
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social p{
+    padding: 1% 2%;
+}
+
+.shadebox {
+    background: rgba(0, 0, 0, .6);
 }
 
 /* spacer */
@@ -118,7 +148,16 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+   align-items: center;
 }
+
+.menu h2 {
+    text-align: center;
+    color: white;
+}
+
+.menu-section{}
 
 /* footer section */
 footer {

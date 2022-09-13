@@ -52,15 +52,16 @@ table {
 }
 
 html {
-    max-width: 1920px;
-    min-width: 428px;
-    width: 100%;
+    /* max-width: 1920px;
+    min-width: 428px; */
+    width: 100vw;
     font-size: 62.5%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    width:100vw;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
@@ -69,23 +70,31 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    color: white;
 }
 
 h2 {
     font-size: 6rem;
+    font-size: 3.5rem;
+    color: white;
 }
 
 h3 {
     font-size: 5rem;
+    color: white;
 }
 
 p, a {
     font-size: 3rem;
+    color: white;
 }
 
+i {
+    color: white;
+}
 /* header section */
 header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
@@ -93,6 +102,34 @@ header {
     background-repeat: no-repeat;
 }
 
+header h1 {
+    color: white;
+    text-align: center;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 6%;
+    padding-bottom: 2%;
+    font-size: 2.0rem;
+}
+header nav {
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social p{
+    padding: 1% 2%;
+}
+
+.shadebox {
+    background: rgba(0, 0, 0, .6);
+}
 /* spacers */
 .spacer {
     width: 100%;
@@ -108,15 +145,25 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     background-color: rgb(0, 4, 17);
+}
+
+.gallery h2 {
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.gallery img {
+    padding: 1%
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: 75%;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -135,10 +182,16 @@ header {
 
 .about h2 {
     width: 100%;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 6%;
 }
 
 .about-container .text {
     width: 50%;
+    color: white;
+    font-size: 3.5rem;
+
 }
 
 /* contact us section */
@@ -153,7 +206,7 @@ header {
 
 .contact-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(0, 4, 17, .8);
 }
 
@@ -170,31 +223,69 @@ header {
 }
 
 .info {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .address {
-    width: 25%;
+    width: 20%;
 }
 
 .hours {
-    width: 25%;
+    width: 20%;
     padding-bottom: 2.5vh;
 }
 
 .contacts {
-    width: 25%;
+    width: 20%;
+    
 }
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: auto;
     padding-top: 2.5vh;
-    font-size: 3rem;
+    font-size: 1.8rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex start;
+
 }
+
+.emailsignup p {
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+
+footer nav {
+    width: 75vw;
+    padding: 2%;
+}
+footer nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 6%;
+    
+}
+
+.navcopyright {
+    display: flex;
+    flex-direction: column;
+}
+
+footer small {
+    color:white;
+    font-size: 1.2rem;
+    
+    
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
@@ -246,8 +337,18 @@ footer {
 
     /* footer section */
     footer {
-        height: auto;
+        height: 100%;
         padding-top: 2.5vh;
         font-size: 2rem;
+        width: 100
+    }
+
+    footer nav {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 6%;
+    padding-bottom: 2%;
+    font-size: 2.0rem;
     }
 }
